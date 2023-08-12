@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 -->
+    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+    <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="SISPOS.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+    </sectionGroup>
+  </configSections>
+  <appSettings>
+    <add key="C1ApplicationTheme" value="VS2013Light" />
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+  </appSettings>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1" />
+  </startup>
+  <entityFramework>
+    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.SqlConnectionFactory, EntityFramework" />
+    <providers>
+      <provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer" />
+    </providers>
+  </entityFramework>
+  <connectionStrings>
+    <add name="GestionCnn" connectionString="Data Source=NOTEDU;Initial Catalog=SISPOSV;Integrated Security=False;User Id=sa; Password=26234679;MultipleActiveResultSets=True;App=EntityFramework" providerName="System.Data.SqlClient" />
+    <add name="GESTIONDEV" connectionString="Data Source=NOTEDU;Initial Catalog=SISPOSV;Integrated Security=True;MultipleActiveResultSets=True" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+  <userSettings>
+    <SISPOS.Properties.Settings>
+      <setting name="Localidad" serializeAs="String">
+        <value>0</value>
+      </setting>
+      <setting name="Provincia" serializeAs="String">
+        <value>0</value>
+      </setting>
+      <setting name="CodBarPrefijo" serializeAs="String">
+        <value>0</value>
+      </setting>
+      <setting name="CodBarPLU" serializeAs="String">
+        <value>0</value>
+      </setting>
+      <setting name="CodBarPrecio" serializeAs="String">
+        <value>0</value>
+      </setting>
+      <setting name="SISPOS_WSAA_LoginCMSService" serializeAs="String">
+        <value>https://wsaahomo.afip.gov.ar/ws/services/LoginCms</value>
+      </setting>
+      <setting name="SISPOS_WSFE_Service" serializeAs="String">
+        <value>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</value>
+      </setting>
+      <setting name="RutaCertificadoAFIP" serializeAs="String">
+        <value>D:\Desarrollo\Gestion ONE C#\cert.p12</value>
+      </setting>
+      <setting name="UtilizaFE" serializeAs="String">
+        <value>False</value>
+      </setting>
+      <setting name="ImpresoraFE" serializeAs="String">
+        <value>Sin Especificar</value>
+      </setting>
+      <setting name="AvanceCorte" serializeAs="String">
+        <value>0</value>
+      </setting>
+      <setting name="ImpresoraComandera" serializeAs="String">
+        <value>Sin Especificar</value>
+      </setting>
+      <setting name="ComanderaDeseaImprimir" serializeAs="String">
+        <value>False</value>
+      </setting>
+      <setting name="LogoPath" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="DBServer" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="usuario" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="password" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="DB" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="FacturaTexto1" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="FacturaTexto2" serializeAs="String">
+        <value />
+      </setting>
+    </SISPOS.Properties.Settings>
+  </userSettings>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-5.0.0.0" newVersion="5.0.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuracion>
+<conexion>
+  <server>NOTEDU</server>
+  <baseDeDatos>SISPOSV</baseDeDatos>
+<usuario>sa</usuario>  
+<password>4B2FsBz1fh+VAfYMhdDQeQ==
+</password>
+</conexion>
+</configuracion>
